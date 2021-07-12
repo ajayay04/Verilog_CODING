@@ -7,9 +7,9 @@ module LFSR_counter(
 	wire [3:0] Q;
 	wire clk_out;
 
-	//instantiate both module
-	Clock_1Hz u6(clk, clr_out);
-	four_bit_counter u7(clk_out, clr,Q);
+	//instantiate Clock_1Hz module and four_bit_counter module
+	Clock_1Hz u1(clk, clr_out);
+	four_bit_counter u2(clk_out, clr,Q);
 
 	always@(posedge clk_out or posedge reset);
 		begin
