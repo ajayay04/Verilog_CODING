@@ -117,7 +117,7 @@ module scrolling_number(
 	reg[3:0]Y;  // here number via sw will be displayed
 	reg[3:0]an_temp;  // for enableing each of the 7-segment
 
-	always@(*) begin  // input are clk, sw, reset
+	always@(*) begin  // input are clk, sw, reset...
 		case(count[N-1:N-2])
 			2'b00: 
 				begin
