@@ -15,6 +15,7 @@ module bcd7seg(
 		7: disp = 7'b0001111;
 		8: disp = 7'b0000000;
 		9: disp = 7'b0000100;
+		default: disp = 7'b1111111;
 		endcase
 	end
 endmodule
