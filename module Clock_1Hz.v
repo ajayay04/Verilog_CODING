@@ -1,4 +1,4 @@
-module Clock_1Hz(
+module _slow_Clock_1Hz(
 	input clk_in,   // input clk from FPGA board
 	output clk_out  // 1Hz clk output
 	);
